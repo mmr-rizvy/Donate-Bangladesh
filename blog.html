@@ -29,7 +29,7 @@
   <body class="lexend-font">
     <header id="header" class="sticky top-0 backdrop-blur-md">
       <!-- Navigation Menu Start Here -->
-      <nav class="bg-[#F9F7F3] mb-20">
+      <nav class="bg-[#F9F7F3]">
         <div class="container mx-auto pt-4 pb-16">
           <div class="navbar px-3">
             <div class="navbar-start">
@@ -57,19 +57,84 @@
         </div>
       </nav>
       <!-- Navigation Menu End Here -->
-      <!-- Header Button Box Start Here -->
-      <div class="container mx-auto mb-4 py-4">
-        <div class="flex flex-row justify-center items-center gap-4">
-          <button class="btn bg-[#B4F461] text-xl hover:bg-[#B4F442]">
-            Donation
-          </button>
-          <button class="btn text-xl">History</button>
-        </div>
-      </div>
-      <!-- Header Button Box End Here -->
     </header>
     <!-- Main Section Start Here -->
-    <main id="main"></main>
+    <main id="main" class="my-4">
+      <div class="container mx-auto px-4">
+        <div class="collapse collapse-arrow border rounded-none">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What is the Document Object Model (DOM)?
+          </div>
+          <div class="collapse-content">
+            <p>
+              The Document Object Model (DOM) is a programming interface for web
+              documents. It represents the structure of a document (usually HTML
+              or XML) as a tree of objects, where each node in the tree
+              corresponds to a part of the document, such as elements,
+              attributes, and text.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow border rounded-none">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              You can select elements from the DOM using various methods
+              provided by the Document Object Model (DOM) API in JavaScript.
+              These methods provide a powerful way to select and manipulate
+              elements in the DOM, enabling you to create dynamic and
+              interactive web applications. Use querySelector and
+              querySelectorAll for more complex selections using CSS selectors,
+              while getElementById, getElementsByClassName, and
+              getElementsByTagName can be handy for simpler cases.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow border rounded-none">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            What is event delegation in the context of the DOM, and why is it
+            useful?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Event delegation is a technique in the DOM where a single event
+              listener is attached to a parent element instead of adding
+              individual event listeners to each child element. This approach
+              leverages the concept of event bubbling, where events propagate up
+              the DOM tree, allowing the parent element to catch events from its
+              children.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow border rounded-none">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How do you manipulate an element's attributes and styles using the
+            DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              <strong>Attributes:</strong> Use setAttribute, getAttribute,
+              removeAttribute, or direct property access to manipulate
+              attributes.
+              <br />
+              <strong>Styles:</strong> Use the style property to manipulate
+              styles directly or use classList for adding, removing, or toggling
+              CSS classes.
+              <br />
+              These methods allow you to create dynamic and interactive web
+              applications by altering the appearance and behavior of elements
+              on the fly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
     <!-- Main Section End Here -->
     <!-- Footer Section Start Here -->
     <footer id="footer" class="bg-[#F9F7F3] h-36"></footer>
