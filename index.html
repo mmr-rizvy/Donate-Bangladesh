@@ -55,8 +55,8 @@
       <!-- Header Button Box Start Here -->
       <div class="container mx-auto mb-8 py-8">
         <div class="flex flex-row justify-center items-center gap-4">
-          <a href="#donation-container" class="btn bg-[#B4F461] text-xl hover:bg-[#B4F442]">Donation</a>
-          <button class="btn text-xl">History</button>
+          <a href="#donation-container" class="btn bg-[#B4F461] text-xl hover:bg-[#B4F442]" id="btn-donation">Donation</a>
+          <button class="btn text-xl" id="btn-history">History</button>
         </div>
       </div>
       <!-- Header Button Box End Here -->
@@ -74,7 +74,7 @@
                     <div class="amount px-4 py-2 border rounded-xl mb-4 inline-block bg-slate-200">
                         <img class="inline-block" src="img/coin.png" alt="coin"> <span id="main-balance-1" class="font-bold">00</span> <span>BDT</span>
                     </div>
-                    <h2 class="text-xl lg:text-2xl font-bold mb-4">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <h2 class="text-xl lg:text-2xl font-bold mb-4">Donate for <span class="donate-for">Flood at Noakhali, Bangladesh</span></h2>
                     <p class="mb-5 md:leading-7 md:text-lg text-justify"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                     <input class="input input-bordered w-full lg:text-xl p-4 font-light" type="text" name="" id="donation-amount-1" placeholder="Write Donation Amount">
                     <div class="mt-5">
@@ -90,7 +90,7 @@
                     <div class="amount px-4 py-2 border rounded-xl mb-4 inline-block bg-slate-200">
                         <img class="inline-block" src="img/coin.png" alt="coin"> <span class="font-bold" id="main-balance-2">600</span> <span>BDT</span>
                     </div>
-                    <h2 class="text-xl lg:text-2xl font-bold mb-4">Donate for Flood Relief in Feni, Bangladesh</h2>
+                    <h2 class="text-xl lg:text-2xl font-bold mb-4">Donate for <span class="donate-for">Flood Relief in Feni, Bangladesh</span></h2>
                     <p class="mb-5 md:leading-7 md:text-lg text-justify"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                     <input class="input input-bordered w-full lg:text-xl p-4 font-light" type="text" name="" id="donation-amount-2" placeholder="Write Donation Amount">
                     <div class="mt-5">
@@ -106,7 +106,7 @@
                     <div class="amount px-4 py-2 border rounded-xl mb-4 inline-block bg-slate-200">
                         <img class="inline-block" src="img/coin.png" alt="coin"> <span class="font-bold" id="main-balance-3">2400</span> <span>BDT</span>
                     </div>
-                    <h2 class="text-xl lg:text-2xl font-bold mb-4">Aid for Injured in the Quota Movement</h2>
+                    <h2 class="text-xl lg:text-2xl font-bold mb-4">Aid for <span class="donate-for">Injured in the Quota Movement</span></h2>
                     <p class="mb-5 md:leading-7 md:text-lg text-justify"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
                     <input class="input input-bordered w-full lg:text-xl p-4 font-light" type="text" name="" id="donation-amount-3" placeholder="Write Donation Amount">
                     <div class="mt-5">
@@ -134,6 +134,11 @@
   </div>
 </dialog>
  <!-- The Modal End Here -->
+  <!-- History Section Start Here -->
+   <div class="container mx-auto">
+    <div class="history hidden" id="transaction-history"></div>
+   </div>
+  <!-- History Section End Here -->
     </main>
     <!-- Main Section End Here -->
      <!-- Footer Section Start Here -->
