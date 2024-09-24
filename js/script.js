@@ -4,7 +4,12 @@ const showSection = function (idName) {
     document.getElementById('transaction-history').classList.add('hidden');
     document.getElementById(idName).classList.remove('hidden');
 }
-
+// Button Active and Inactive Common Function is here
+const buttonActive = function (idName) {
+    document.getElementById('btn-donation').classList.remove('bg-[#B4F461]', 'hover:bg-[#B4F442]');
+    document.getElementById('btn-history').classList.remove('bg-[#B4F461]', 'hover:bg-[#B4F442]');
+    document.getElementById(idName).classList.add('bg-[#B4F461]', 'hover:bg-[#B4F442]');
+}
 // Donate Functionality Start Here
 const donateProcess = function (amountForDonate, mainBalance, balanceInAccount) {
     const donationAmount = Number(document.getElementById(amountForDonate).value);
@@ -57,7 +62,9 @@ document.getElementById('btn-donate-3').addEventListener('click', function () {
 // Section Showing & Hiding Functionality End Here
 document.getElementById('btn-donation').addEventListener('click', function () {
     showSection('donation-container');
+    buttonActive('btn-donation')
 })
 document.getElementById('btn-history').addEventListener('click', function () {
     showSection('transaction-history');
+    buttonActive('btn-history')
 })
